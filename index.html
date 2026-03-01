@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery | Responsive Design</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>Photo<span>Gallery</span></h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Capturing Moments</h1>
+            <p>Explore our collection of stunning photographs from around the world</p>
+            <a href="#gallery" class="btn">View Gallery</a>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Our <span>Gallery</span></h2>
+            <p class="section-subtitle">Discover beautiful moments captured through our lens</p>
+            
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="nature">Nature</button>
+                <button class="filter-btn" data-filter="city">City</button>
+                <button class="filter-btn" data-filter="people">People</button>
+                <button class="filter-btn" data-filter="animals">Animals</button>
+            </div>
+
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Gallery items will be loaded via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section with Flexbox -->
+    <section id="categories" class="categories-section">
+        <div class="container">
+            <h2 class="section-title">Explore <span>Categories</span></h2>
+            <div class="categories-flex">
+                <div class="category-card">
+                    <i class="fas fa-tree"></i>
+                    <h3>Nature</h3>
+                    <p>Landscapes, forests, and natural wonders</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-city"></i>
+                    <h3>City</h3>
+                    <p>Urban life, architecture, and cityscapes</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-users"></i>
+                    <h3>People</h3>
+                    <p>Portraits, culture, and human moments</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-paw"></i>
+                    <h3>Animals</h3>
+                    <p>Wildlife and pet photography</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Food</h3>
+                    <p>Culinary delights and food artistry</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-plane"></i>
+                    <h3>Travel</h3>
+                    <p>Adventure and travel photography</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section with Grid -->
+    <section class="blog-section">
+        <div class="container">
+            <h2 class="section-title">Latest <span>Articles</span></h2>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/photography.jpg" alt="Blog post">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Photography Tips for Beginners</h3>
+                        <p>Learn the basics of composition, lighting, and camera settings...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/location.jpg" alt="Blog post">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Best Locations for Nature Photography</h3>
+                        <p>Discover breathtaking spots for your next photo adventure...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/edit.jpg" alt="Blog post">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Editing Your Photos Like a Pro</h3>
+                        <p>Master photo editing techniques with these simple tips...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/camera.jpg" alt="Blog post">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Choosing the Right Camera Gear</h3>
+                        <p>Understand essential lenses, accessories, and gear to match your photography style and shooting needs…</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/light.jpg" alt="Blog post">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Understanding Natural Light & Golden Hour</h3>
+                        <p>Learn how to use natural light, shadows, and timing to capture stunning, well-balanced photos…</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/style.jpg" alt="Blog post">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Building a Consistent Photography Style</h3>
+                        <p>Discover how to develop a unique visual style through color, framing, and creative storytelling…</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>PhotoGallery</h3>
+                <p>Capturing life's beautiful moments through the lens.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/1F5GfMRYYk/?mibextid=wwXIfr"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/bin_kaiff?igsh=MW9xMnF2Yjk1Z3U2cw%3D%3D&utm_source=qr"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/Binkaiff"><i class="fab fa-twitter"></i></a>
+                    <a href="https://pin.it/4OFfTbjye"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p><i class="fas fa-envelope"></i> binkaiff99@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +94 778 517 874</p>
+                <p><i class="fas fa-map-marker-alt"></i> Sri Lanka, 32280</p>
+            </div>
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <p>Subscribe for updates</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; PhotoGallery. @Bin Kaiff</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
